@@ -1,6 +1,7 @@
-**BGP in the Datacenter**
-=====================             
-# Table of Contents
+
+# <center>**BGP in the Datacenter**</center> <center> By Julian Mato-Hernandez & Evan Jurdan </center>
+
+# Table of Contents:
 - [Introduction](#introduction)
 - [Technology Used](#technology-used)           
     - [Clos & Fat Tree](#clos--fat-tree) 
@@ -137,7 +138,7 @@ The bellow graphs depict the RTT(Y) of each packet compared to the time it origi
 <br>
 <br>
 
-# Discussion of results:           
+# Discussion of Results:           
 The results fell in line with what was expected of BGP and Clos. There were some outliers such as one data point in the convergence time experiment that managed to converge in 25 seconds which should not be possible due to the hello timer being 10 seconds, the conclusion was that there must have been a missed hello timer before the link was broken. Another interesting development is the relatively small impact traveling through the spine has on connection speed, it appears nearly negligible.      
 <br>
 With this data, it is easy to see the stability of this network even under a 98000 packet per minute load. Though some of the network degradations are probably attributable to the form of virtualization used for this topology (GNS3 with qemu). 
@@ -167,7 +168,92 @@ Figure 3 - By Original: FoobazSVG: Rehua - This file was derived from: NetworkTo
 
 <br>
 <br>
-<br>
 
 # Appendix:            
-LSA
+<dl>
+   <dt>LSA</dt>
+       <dd>Link State Advertisement</dd><br>
+   <dt>Clos</dt>
+       <dd>A type of datacenter topology</dd><br>
+   <dt>Fat Tree</dt>
+       <dd>A type of Clos topology</dd><br>
+   <dt>BGP</dt>
+       <dd>Border Gateway Protocol</dd><br>
+   <dt>EBGP</dt>
+       <dd>External Border Gateway Protocol</dd><br>
+   <dt>Full Mesh</dt>
+       <dd>When all nodes in a network are interconnected</dd><br>
+   <dt>Partial mesh</dt>
+       <dd>When only some nodes in a network are interconnected/dd>
+   <dt>topology</dt>
+       <dd>how to refer to the physical structure of a network</dd><br>
+   <dt>spine</dt>
+       <dd>The top layer of a Clos topology</dd><br>
+   <dt>leaf</dt>
+       <dd>The middle or "aggregation" layer of a Clos topology</dd><br>
+   <dt>ToR</dt>
+       <dd>Top of Rack in a Clos topology</dd><br>
+   <dt>pod</dt>
+       <dd>Point of delivery</dd><br>
+   <dt>link</dt>
+       <dd>Connection between two machines</dd><br>
+   <dt>Routing protocol</dt>
+       <dd>The software that fairies data over a network</dd><br>
+   <dt>Inter</dt>
+       <dd>Between two things</dd><br>
+   <dt>Intra</dt>
+       <dd>Within itself</dd><br>
+   <dt>route aggregation</dt>
+       <dd>The act of making many small individual routes converge in to one route</dd><br>
+   <dt>truncate</dt>
+       <dd>limit the number of</dd><br>
+   <dt>IP Sec</dt>
+       <dd>Internet protocol security</dd><br>
+   <dt>bandwidth </dt>
+       <dd>measure of the data transfer rate or capacity of a given network</dd><br>
+   <dt>aggregated</dt>
+       <dd>To make one</dd><br>
+   <dt>hosts</dt>
+       <dd>Computers on the network</dd><br>
+   <dt>neighbors</dt>
+       <dd>The router or layer 3 switch directly adjacent</dd><br>
+   <dt>route advertisements </dt>
+       <dd>the way BGP states what networks it is aware of</dd><br>
+   <dt>hello timer</dt>
+       <dd>Protocol to ensure all nodes in a BGP network are functioning</dd><br>
+   <dt>route flooding</dt>
+       <dd>The act of receiving saving and repeating a message</dd><br>
+   <dt>AS</dt>
+       <dd>Autonomous System</dd><br>
+   <dt>Autonomous System Number</dt>
+       <dd>A unique identifier for each router or layer 3 switch</dd><br>
+   <dt>propagating</dt>
+       <dd>replicateing</dd><br>
+   <dt>route change</dt>
+       <dd>when the flow of traffic changes</dd><br>
+   <dt>redundancy</dt>
+       <dd>Secondary or contingent systems</dd><br>
+   <dt>convergence time</dt>
+       <dd>The time from a lost link to re-establishing connection</dd><br>
+   <dt>octet </dt>
+       <dd>one 8 bit quarter of an IPv4 address</dd><br>
+   <dt>/30</dt>
+       <dd>a subnet with only 4 addresses and 2 usable ones</dd><br>
+   <dt>hostname</dt>
+       <dd>the name of the machine</dd><br>
+   <dt>downlinks</dt>
+       <dd>Network connections who are no longer passing traffic</dd><br>
+   <dt>hot standby</dt>
+       <dd>A machine which is idling for the purpose of taking over if there the primary fails</dd><br>
+   <dt>wireshark</dt>
+       <dd>A packet capturing software</dd><br>
+   <dt>capture</dt>
+       <dd>log incoming and outgoing traffic</dd><br>
+   <dt>traffic</dt>
+       <dd>Data moving in a network</dd><br>
+   <dt>GNS3</dt>
+       <dd>Network emulation software</dd><br>
+   <dt>qemu</dt>
+       <dd>virtualization software</dd><br>
+<dl>
+
